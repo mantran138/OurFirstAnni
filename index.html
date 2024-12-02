@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Anniversary đầu tiên của chúng taaaaa 🫶</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+			
+		</div>
+		<div id="navButtons" style="display: none;"> 
+			<button id="prevButton" onclick="prevImage()">Quay lại</button>
+			<button id="nextButton" onclick="nextImage()">Tiếp theo</button>
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Bấm đi nàoo!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Chúng ta đã bên nhau được</h2>
+			<div id="timer">
+				<b id="d"></b> Ngày 
+				<b id="h"></b> Giờ
+				<b id="m"></b> Phút
+				<b id="s"></b> Giây
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.jpg", "pic/pic2.jpg", "pic/pic3.jpg", "pic/pic4.jpg", "pic/pic5.jpg", "pic/pic6.jpg", 
+			"pic/pic7.jpg", "pic/pic8.jpg", "pic/pic9.jpg", "pic/pic10.jpg", "pic/pic11.jpg", "pic/pic12.jpg", "pic/pic13.jpg",
+			"pic/pic14.jpg", "pic/pic15.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["Anh muốn nói với bé híp cái nàyy,<br>một tháng yêu nhau trôi qua nhanh thật đếyy, nhưng anh thấy được và cảm nhận được từng giây phút bên em đều cực kỳ hạnh phúc và tuyệt vời.<br> Em chính là điều tuyệt vời nhất mà anh có được.💖", "Anh yêu nụ cười và tiếng cười của bé híp nhắm,<br>cứ mỗi lần thấy và nghe là đều khiến anh quên đi mọi mệt mỏi,<br>nó mang một năng lượng rất tích cực và anh thích nhắm (｡･ω･｡)ﾉ♡",
+			 "Trộm vía em bé của anh hong chỉ xinh đẹp mà còn chu che nữaaa,<br>trộm vía lần nữa anh thấy anh thật may mắn khi gặp được em đóo💗", "Từ khi gặp em, bé luôn là động lực sống của anh mỗi ngày, và giúp anh có nhiều động lực lắm luônnn o(≧v≦)o", "Anh biết là có những lúc sẽ làm em buồn,<br>nhưng anh vẫn đang nỗ lực từng chút một để trở nên xứng đáng hơn vứi emmm(/ω＼)","Đôi khi có những thứ anh làm em bé bực mình, cáu gắt,<br>nhưng mà anh mong em sẽ nói ra những cái đó để anh có thể cải thiện bản thân hơn nhéee",
+			 "Bé híp có bít hemm, em chính là người khiến anh cảm nhận rằng tình yêu<br>là một điều kỳ diệu và đáng trân trọng lắm ó💞", "Anh yêu tính cách của em nhắmmm, em gất là hiền dịu, và nhẹ nhàng(･∀･)", "Anh rất là yêu đôi mắt của em luônnn, hăm bít bé có để ý hong, nhưng bắt đầu từ first date,<br> anh đã ngắm đôi mắt đó nhiều lắm luôn áaaa :3 ", "Với anh, em không chỉ là người yêu mà còn là người bạn đồng hành tuyệt vời nhứtttt🫰", 
+			 "Cảm ơn ba mẹ em vì đã sinh em ra trên đời đời nàyyy🤗", "Không chỉ dừng lại ở 1 tháng, mà anh mong là con số này sẽ tăng mãiiii ٩(๑òωó๑)۶", "Anh mong là là hai chúng ta sẽ càng ngày càng iu nhau hơnnn😽😽", "Chúc mừng kỷ niệm tháng đầu tiên của chúng taaa 😘🫶🫶🥳🎉🎉", "Anh yêu em nhiều nhắmmmm (●♡∀♡) ❤️ (♥ω♥ ) ~♪"];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>

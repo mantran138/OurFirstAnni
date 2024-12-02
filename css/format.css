@@ -1,0 +1,167 @@
+#typeDiv {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+}
+
+#txt1 {
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+#txt2 {
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+
+#content{
+	position: absolute;
+	top: 1%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 20%;
+}
+
+#together{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+#timer{
+	text-align: center;
+	color: white;
+}
+
+#d{
+	font-size: 19px;
+}
+
+#h{
+	font-size: 19px;
+}
+
+#m{
+	font-size: 19px;
+}
+
+#s{
+	font-size: 19px;
+}
+
+#heartTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 80%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 10%;
+	height: 8%;
+}
+
+#clickMe{
+	display: inline-block;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#heart{
+	width: 100%;
+	height: 100%;
+}
+
+#button{
+	background-image: url("../pic/love.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-position: center;
+	transition: 0.1s;
+	width: 100%;
+	height: 100%;
+
+}
+
+#button:active {
+	width: 92%;
+	height: 92%;
+}
+
+#imgTxt{
+	position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%; /* Đảm bảo container không quá rộng */
+    height: 50%;
+    max-height: 70vh; /* Đảm bảo không vượt quá 70% chiều cao màn hình */
+    text-align: center;
+    overflow: hidden; /* Ngăn nội dung tràn ra ngoài */
+}
+
+#img{
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của container */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao của container */
+    width: auto;
+    height: auto; /* Duy trì tỷ lệ gốc */
+    object-fit: contain; /* Đảm bảo toàn bộ hình ảnh hiển thị gọn trong container */
+	opacity: 0;
+    transition: opacity 1s ease-in-out; /* Điều chỉnh thời gian và kiểu hiệu ứng fade */
+}
+
+#Txt{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	
+}
+
+#tmp{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#navButtons {
+    position: absolute; /* hoặc relative nếu cần căn chỉnh */
+    bottom: 170px; /* Căn nút xuống phía dưới */
+    left: 50%; /* Căn giữa ngang */
+    transform: translateX(-50%);
+    z-index: 999; /* Đảm bảo hiển thị trên cùng */
+    display: none; /* Ban đầu ẩn */
+}
+
+#prevButton, #nextButton {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #ffcccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: #ff9999;
+}
