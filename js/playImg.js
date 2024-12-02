@@ -16,7 +16,7 @@ function play() {
         
         // Nếu nhạc chưa được phát, thì bắt đầu phát nhạc và điều chỉnh âm lượng xuống 50%
         if (audio.paused) {
-            audio.volume = 0.3; // Điều chỉnh âm lượng xuống 50%
+            audio.volume = 0.1; // Điều chỉnh âm lượng xuống 50%
             audio.play();
         }
     }
